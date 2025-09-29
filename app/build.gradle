@@ -4,6 +4,7 @@ plugins {
 }
 
 android {
+    namespace "com.example.lotoaclick"
     compileSdk 33
 
     defaultConfig {
