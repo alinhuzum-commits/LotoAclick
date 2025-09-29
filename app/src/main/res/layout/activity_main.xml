@@ -1,25 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="16dp">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/statusText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Apasă Start pentru a începe"
-        android:textSize="18sp"
-        android:padding="10dp" />
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:padding="16dp">
 
-    <Button
-        android:id="@+id/startButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Start"
-        android:padding="10dp"
-        android:layout_marginTop="20dp" />
+      <TextView
+          android:id="@+id/tvStatus"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Status: idle"
+          android:textSize="16sp"
+          android:paddingBottom="12dp"/>
 
-</LinearLayout>
+      <Button
+          android:id="@+id/btnPickFile"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Selectează fișier (.txt)"/>
+
+      <TextView
+          android:id="@+id/tvFile"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Fișier: (niciunul)"
+          android:paddingTop="8dp"
+          android:paddingBottom="12dp"/>
+
+      <EditText
+          android:id="@+id/edtXStart"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="X start"
+          android:inputType="number"
+          android:text="152"/>
+
+      <EditText
+          android:id="@+id/edtYStart"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Y start"
+          android:inputType="number"
+          android:text="620"/>
+
+      <EditText
+          android:id="@+id/edtDX"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="ΔX (pas oriz.)"
+          android:inputType="number"
+          android:text="120"/>
+
+      <EditText
+          android:id="@+id/edtDY"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="ΔY (pas vert.)"
+          android:inputType="number"
+          android:text="110"/>
+
+      <EditText
+          android:id="@+id/edtCols"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Număr coloane (ex.10)"
+          android:inputType="number"
+          android:text="10"/>
+
+      <EditText
+          android:id="@+id/edtDelayBetween"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Delay între combinații (sec)"
+          android:inputType="number"
+          android:text="10"/>
+
+      <EditText
+          android:id="@+id/edtTapDelay"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Delay între tap-uri (ms)"
+          android:inputType="number"
+          android:text="250"/>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:paddingTop="12dp">
+
+          <Button
+              android:id="@+id/btnStart"
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:layout_height="wrap_content"
+              android:text="Start"/>
+
+          <Button
+              android:id="@+id/btnStop"
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:layout_height="wrap_content"
+              android:text="Stop"/>
+      </LinearLayout>
+
+  </LinearLayout>
+</ScrollView>
