@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LotoAClick</string>
+    <string name="service_description">Loto AClick accessibility service</string>
+    <string name="service_label">LotoAClick Service</string>
+</resources>
