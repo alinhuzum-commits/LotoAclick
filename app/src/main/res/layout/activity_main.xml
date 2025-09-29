@@ -2,12 +2,24 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:gravity="center"
-    android:orientation="vertical">
+    android:padding="16dp">
 
     <TextView
-        android:text="Hello LotoClick!"
-        android:textSize="24sp"
+        android:id="@+id/statusText"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="Apasă Start pentru a începe"
+        android:textSize="18sp"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:padding="10dp"
+        android:layout_marginTop="20dp" />
+
 </LinearLayout>
